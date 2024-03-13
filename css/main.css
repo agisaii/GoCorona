@@ -201,9 +201,21 @@ body {
   line-height: 1.2;
   letter-spacing: 1.7px;
 }
+.menu__link:hover, .menu__link:focus {
+  color: #ec5863;
+}
+.menu__link:active {
+  color: #4285f4;
+}
 
-.icon-menu {
+.icon-menu,
+.close-icon-menu {
   display: none;
+}
+
+.close-icon-menu img {
+  width: 100%;
+  height: 100%;
 }
 
 /* ===================================== */
@@ -234,7 +246,7 @@ body {
   }
   .header__button .button {
     padding: 14px 20px;
-    font-size: 16px;
+    font-size: 13px;
   }
   .header__button .button-blue {
     background-color: #2754c7;
@@ -244,14 +256,34 @@ body {
     padding: 3px;
     border-radius: 5px;
   }
-  .menu__body {
+  .header:target .menu__body {
+    left: 0;
+  }
+  .header:target .menu__body::before {
+    content: "";
     position: fixed;
     top: 0;
     left: 0;
+    height: 80px;
+    width: 100%;
+    background-color: #4285f4;
+  }
+  .header:target .icon-menu {
+    display: none;
+  }
+  .header:target .close-icon-menu {
+    display: flex;
+  }
+  .menu__body {
+    position: fixed;
+    top: 0;
+    left: -100%;
     width: 100%;
     height: 100%;
     background-color: #4285f4;
     padding: 90px 15px 30px;
+    transition: left 0.3s ease 0s;
+    overflow: auto;
   }
   .menu__link {
     color: #fff;
@@ -261,6 +293,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 35px 0px 0px 0px;
   }
   .menu__item {
     margin: 0px 0px 25px 0px;
@@ -268,17 +301,18 @@ body {
   .menu__item:last-child {
     margin: 0px;
   }
-  .icon-menu {
+  .icon-menu,
+  .close-icon-menu {
     display: flex;
     position: relative;
     height: 18px;
-    flex: 0 0 30px;
+    flex: 0 0 18px;
     justify-content: space-between;
     flex-direction: column;
     margin: 0px 0px 0px 20px;
     background-color: #fff;
     box-sizing: content-box;
-    padding: 13px 10px;
+    padding: 13px;
     border-radius: 5px;
   }
   .icon-menu::before, .icon-menu::after {
@@ -289,6 +323,9 @@ body {
   .icon-menu span {
     background-color: #000;
     height: 2px;
+  }
+  .close-icon-menu {
+    display: none;
   }
 }
 /* ===================================== */

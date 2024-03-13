@@ -1,4 +1,9 @@
 @import "./base/reset";
 @import "./base/vars";
+@import "./base/base";
 
-@import "./base/images";
+@import "./base/elements";
+
+@import "./blocks/header";
+
+@import "./base/media";

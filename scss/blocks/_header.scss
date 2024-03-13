@@ -1,0 +1,53 @@
+.header {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+
+    &__container {
+        display: flex;
+        min-height: 114px;
+        align-items: center;
+    }
+    &__logo {
+        position: relative;
+        z-index: 5;
+    }
+    &__menu {
+        flex: 1 1 auto;
+    }
+
+    &__button {
+        flex: 0 0 252px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        position: relative;
+    }
+}
+
+.menu {
+    display: flex;
+    justify-content: flex-end;
+    &__list {
+        display: flex;
+    }
+
+    &__item {
+        margin: 0px 40px 0px 0px;
+    }
+
+    &__link {
+        color: #000;
+        font-family: Raleway;
+        font-size: 10px;
+        font-weight: 700;
+        line-height: 1.2;
+        letter-spacing: 1.7px;
+    }
+}
+
+.icon-menu {
+    display: none;
+}

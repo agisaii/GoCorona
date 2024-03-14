@@ -45,3 +45,41 @@
         background-color: $main-color-active;
     }
 }
+//info-text
+
+.block-text {
+    &__title {
+        color: #000000;
+        font-size: 44px;
+        font-weight: 700;
+        line-height: 126%;
+
+        &:not(:last-child) {
+            margin: 0px 0px 12px 0px;
+        }
+
+        &-blue {
+            span {
+                color: $accent-color;
+            }
+        }
+        &-pink {
+            span {
+                color: $main-color;
+            }
+        }
+    }
+
+    &__text {
+        font-size: 12px;
+        line-height: 138.5%;
+        letter-spacing: 8%;
+
+        &:not(:last-child) {
+            margin: 0px 0px 24px 0px;
+        }
+    }
+
+    &__button {
+    }
+}

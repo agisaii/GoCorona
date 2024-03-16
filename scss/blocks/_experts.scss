@@ -1,0 +1,113 @@
+.experts {
+    padding: 104px 0 116px;
+    background-color: #fafbfd;
+
+    &__statistics {
+        padding: 0px 0px 80px 0px;
+    }
+
+    &__body {
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+    }
+
+    &__content {
+        display: flex;
+        align-items: center;
+        padding: 0px 15px 0px 0px;
+    }
+
+    &__block-text {
+        max-width: 400px;
+    }
+
+    &__video {
+        padding: 0px 0px 58% 0px;
+        position: relative;
+        border-radius: 8px;
+        box-shadow: 0px 4px 18px 0px rgba(88, 126, 236, 0.18);
+
+        iframe {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            object-fit: cover;
+        }
+    }
+}
+.statistics-experts {
+    max-width: 654px;
+    margin: 0 auto;
+    position: relative;
+
+    &__body {
+        background-color: #fff;
+        border-radius: 16px;
+        box-shadow: 0px 2px 24px 0px rgba(88, 126, 236, 0.15);
+        position: relative;
+        z-index: 2;
+    }
+
+    &__decor {
+        position: absolute;
+        background: $main-color;
+        transform: rotate(-30deg);
+        border-radius: 30px;
+    }
+
+    &__decor1 {
+        width: 65.75px;
+        height: 65.75px;
+        border-radius: 16px;
+        top: 75px;
+        left: -21px;
+    }
+
+    &__decor2 {
+        width: 96.96px;
+        height: 96.96px;
+        transform: rotate(105deg);
+        top: -51px;
+        left: 209px;
+    }
+
+    &__decor3 {
+        width: 127.47px;
+        height: 127.47px;
+        top: 0;
+        right: -50px;
+    }
+}
+.body-statistics-experts {
+    display: flex;
+    padding: 28px 80px;
+    align-items: center;
+
+    &__item {
+        flex: 0 1 25%;
+        text-align: center;
+        &:last-child {
+            flex: 0 1 50%;
+        }
+    }
+
+    &__value {
+        color: $main-color;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 43px;
+        letter-spacing: 2px;
+        margin: 0px 0px 5px 0px;
+    }
+
+    &__desc {
+        color: #000;
+        font-size: 11px;
+        font-weight: 700;
+        line-height: 13px;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+    }
+}

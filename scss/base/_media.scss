@@ -186,6 +186,66 @@
             padding: 0px 0px 30px 0px;
         }
     }
+
+    .experts {
+        padding: 104px 25px 70px;
+
+        &__statistics {
+            padding: 0px 0px 80px 0px;
+        }
+
+        &__body {
+            display: block;
+        }
+
+        &__content {
+            padding: 0px 0px 30px 0px;
+        }
+
+        &__block-text {
+            max-width: none;
+        }
+    }
+    .statistics-experts {
+        max-width: 85%;
+
+        &__decor3 {
+            width: 120.47px;
+            height: 120.47px;
+        }
+    }
+    .body-statistics-experts {
+        padding: 28px 20px;
+    }
+}
+/* ===================================== */
+@media (max-width: 630px) {
+    .statistics-experts {
+        &__decor3 {
+            width: 95.47px;
+            height: 95.47px;
+            top: 40px;
+        }
+        &__decor2 {
+            left: 120px;
+        }
+        &__decor1 {
+            top: 65px;
+        }
+    }
+    .body-statistics-experts {
+        padding: 28px 20px;
+
+        &__value {
+            font-size: 29px;
+            margin-bottom: 2px;
+        }
+
+        &__desc {
+            font-size: 10px;
+            letter-spacing: 1px;
+        }
+    }
 }
 /* ===================================== */
 @media (max-width: 479.98px) {
@@ -239,6 +299,41 @@
             height: 120px;
             top: 10px;
             left: 10px;
+        }
+    }
+
+    .experts {
+        padding: 104px 10px 50px;
+    }
+    .statistics-experts {
+        display: flex;
+        justify-content: center;
+
+        &__body {
+            border-radius: 10px;
+        }
+
+        &__decor3 {
+            width: 95.47px;
+            height: 95.47px;
+            top: 200px;
+            right: -5px;
+        }
+        &__decor1 {
+            left: 0;
+            top: 85px;
+        }
+    }
+    .body-statistics-experts {
+        flex-direction: column;
+        width: 80%;
+
+        &__item {
+            padding: 0 15px;
+            margin: 0px 0px 25px 0px;
+            &:last-child {
+                margin: 0;
+            }
         }
     }
 }

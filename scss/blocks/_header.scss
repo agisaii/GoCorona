@@ -53,6 +53,10 @@
         &:active {
             color: $accent-color;
         }
+
+        &__active {
+            color: $main-color;
+        }
     }
 }
 

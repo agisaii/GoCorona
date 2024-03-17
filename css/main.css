@@ -37,6 +37,7 @@ body {
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+  scroll-behavior: smooth;
 }
 
 input,
@@ -233,6 +234,9 @@ body {
 }
 .menu__link:active {
   color: #4285f4;
+}
+.menu__link__active {
+  color: #ec5863;
 }
 
 .icon-menu,

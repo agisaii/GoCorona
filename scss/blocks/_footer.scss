@@ -1,0 +1,14 @@
+.footer {
+    padding: 47px 0;
+
+    &__body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    &__link {
+        margin: 0px 28.5px;
+    }
+}

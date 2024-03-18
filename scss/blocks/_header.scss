@@ -1,9 +1,10 @@
 .header {
-    position: absolute;
+    position: fixed;
     width: 100%;
     top: 0;
     left: 0;
     z-index: 99;
+    background-color: #fff;
 
     &__container {
         display: flex;
